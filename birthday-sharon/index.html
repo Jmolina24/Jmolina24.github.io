@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1648d8" />
   <link rel="icon" href="../assets/jm.png">
-  <title>🎂 SG - Mi amor 🎂</title>
+  <title> Mi amor - SG  🎂</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -53,6 +53,9 @@
         <p>¡Tu día especial se acerca! <span class="heart">♥</span></p>
       </div>
     </section>
+    <button class="space-journey-button" id="start-space-journey" type="button">
+      <span aria-hidden="true">🚀</span> ¿Viajamos por nuestros recuerdos?
+    </button>
 
     <div class="calendar" aria-hidden="true">
       <div class="calendar-rings"><i></i><i></i></div>
@@ -63,5 +66,23 @@
     <div class="gift" aria-hidden="true"><div class="gift-bow">⌁</div><div class="gift-lid"></div><div class="gift-box"><span></span></div></div>
     <div class="decoration dots dots-bottom" aria-hidden="true"></div>
   </main>
+  <div class="image-modal" id="image-modal" role="dialog" aria-modal="true"
+    aria-labelledby="journey-progress" aria-hidden="true" hidden>
+    <div class="image-modal__content">
+      <button class="image-modal__close" type="button" aria-label="Cerrar imagen">&times;</button>
+      <div class="image-modal__slides">
+        <img class="image-modal__image" src="img/1.jpeg" alt="Recuerdo especial, foto 1">
+        <div class="image-modal__details">
+          <p class="image-modal__progress" id="journey-progress" aria-live="polite"></p>
+          <button class="image-modal__next" type="button">Siguiente</button>
+        </div>
+      </div>
+      <div class="image-modal__final" hidden>
+        <span class="image-modal__final-icon" aria-hidden="true">💖</span>
+        <h2 id="journey-final-title">Te amo</h2>
+        <p>Aunque hoy no seamos novios, lo que siento por ti es sincero: te amo y te cuido como si lo fuéramos, con ternura, respeto y todo mi corazón. De todos los caminos que pude recorrer, mi favorito siempre será el que me llevó a ti. Gracias por cada risa, cada abrazo y cada recuerdo. Si volviera a empezar, te elegiría una y otra vez. Ojalá la vida nos regale muchos días más para seguir creando recuerdos. Te amo.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
